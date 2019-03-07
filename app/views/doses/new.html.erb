@@ -1,0 +1,14 @@
+<h2>New Dose for  <%= @cocktail.name %></h2>
+<%= form_for([@cocktail,@dose]) do |f| %>
+  <%= f.label :description, "Describe dose" %>
+  <%= f.text_field :description %>
+
+  <%= f.label :ingredient, "add ingredient" %>
+  <%= f.text_field :ingredient %>
+
+
+
+
+  <%= f.submit "create"%>
+<% end %>
+
